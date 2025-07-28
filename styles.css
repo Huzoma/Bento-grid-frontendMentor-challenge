@@ -146,13 +146,13 @@ p {
   }
 }
 .grid-item.card-3 {
-  padding: 5rem 0 0 4rem;
+  padding: 5rem 0 0 4rem; /* USING PADDING TO PUSH THE IMAGE TO THE RIGHT */
   gap: 1rem;
   color: var(--bento-Black);
   text-align: left;
-  overflow: hidden;
+  overflow: hidden; /* CROP IMAGE OVERFLOW */
   .third-grid-image {
-    width: 350px;
+    width: 350px;     /* SPECIFIED A FIXED WIDTH TO CAUSE AN OVERFLOW */
   }
 }
 .grid-item.card-4 {
@@ -161,14 +161,14 @@ p {
   gap: 6rem;
 }
 .grid-item.card-5 {
-  padding: 4rem 0 0 4rem;
+  padding: 4rem 0 0 4rem; /* USING PADDING TO PUSH THE IMAGE TO THE RIGHT */
   line-height: 2.5rem;
   gap: 3rem;
   color: var(--bento-Black);
   text-align: left;
-  overflow: hidden;
+  overflow: hidden; /* CROP IMAGE OVERFLOW */
   .fifth-grid-image {
-    width: 280px;
+    width: 280px;   /* SPECIFIED A FIXED WIDTH TO CAUSE AN OVERFLOW */
   }
 }
 .grid-item.card-6 {
@@ -176,7 +176,7 @@ p {
   line-height: 2.5rem;
   gap: 5rem;
 }
-.grid-item.card-5, .grid-item.card-6 {
+.grid-item.card-5, .grid-item.card-6 { /* SPECIFIED A FIXED WIDTH TO THE CONTAINER CAUSING AN OVERFLOW */
   max-height: 280px;
   overflow: hidden;
 }
@@ -188,7 +188,7 @@ p {
   padding: 2rem 2rem;
   color: white;
   gap: 2rem;
-  .eighth-grid-text {
+  .eighth-grid-text {  /* SPECIFIED AN ADDITIONAL ON THE TEXT TO PUSHING IT DOWN */
     padding-top: 2rem;
   }
 }
