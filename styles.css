@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+:root {
+  --bento-light-purple: hsl(254, 88%, 90%);
+  --bento-purple: hsl(256, 67%, 59%);
+  --bento-light-yellow: hsl(31, 66%, 93%);
+  --bento-yellow: hsl(39, 100%, 71%);
+  --bento-white: hsl(0, 20%, 94%);
+  --bento-Black: hsl(0, 0%, 7%);
+}
+
+/* CSS RESET STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+ul,
+ol {
+  list-style: none;
+}
+
+/* UTILITIES */
+html {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 10px;
+}
+body {
+  font-size: 1.8rem;
+  background-color: white;
+  align-items: center;
+}
+img {
+  width: 100%;
+}
+.contain {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.px-80 {
+  padding-left: 8rem;/* 8 * 10px == 80px*/
+  padding-right: 8rem;
+}
+h1 {
+  font-size: 4.4rem;
+  font-weight: 600;
+}
+h2 {
+  font-size: 3.4rem;
+  font-weight: 500;
+}
+h3 {
+  font-size: 2.8rem;
+  font-weight: 500;
+}
+p {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+
+/* GRID CONTAINER STYLES */
+#grid-container {
+  width: 70%;
+  margin: 5rem auto;
+  display: grid;
+  grid-template-columns: repeat(4, 250px);
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas: 
+    "One Two Two Three"
+    "One Two Two Three"
+    "One Five Six Three"
+    "Four Five Six Three"
+    "Four Seven Eight Eight"
+  ;
+  gap: 2rem;
+}
+.grid-item:nth-of-type(1) {
+  border-radius: 5px;
+  grid-area: One;
+  background-color: var(--bento-light-yellow);
+}
+.grid-item:nth-of-type(2) {
+  border-radius: 5px;
+  grid-area: Two;
+  background-color: var(--bento-purple);
+}
+.grid-item:nth-of-type(3) {
+  border-radius: 5px;
+  grid-area: Three;
+  background-color: var(--bento-light-purple);
+}
+.grid-item:nth-of-type(4) {
+  border-radius: 5px;
+  grid-area: Four;
+  background-color: var(--bento-yellow);
+}
+.grid-item:nth-of-type(5) {
+  border-radius: 5px;
+  grid-area: Five;
+  background-color: var(--bento-white);
+}
+.grid-item:nth-of-type(6) {
+  border-radius: 5px;
+  grid-area: Six;
+  background-color: var(--bento-yellow);
+}
+.grid-item:nth-of-type(7) {
+  border-radius: 5px;
+  grid-area: Seven;
+  background-color: var(--bento-white);
+}
+.grid-item:nth-of-type(8) {
+  border-radius: 5px;
+  grid-area: Eight;
+  background-color: var(--bento-purple);
+}
+.grid-item {
+  display: flex;
+  flex-direction: column;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.grid-item.card-1 {
+  padding: 8rem 3rem 0 3rem;
+  line-height: 3.5rem;
+  gap: 1rem;
+  #quicker-purple {
+    color: var(--bento-purple);
+    font-style: italic;
+  }
+}
+.grid-item.card-2 {
+  padding: 5rem 4rem;
+  gap: 1rem;
+  color: white;
+  text-align: center;
+  span {
+    color: var(--bento-yellow);
+  }
+}
+.grid-item.card-3 {
+  padding: 5rem 0 0 4rem;
+  gap: 1rem;
+  color: var(--bento-Black);
+  text-align: left;
+  overflow: hidden;
+  .third-grid-image {
+    width: 350px;
+  }
+}
+.grid-item.card-4 {
+  padding: 3rem;
+  line-height: 3.5rem;
+  gap: 6rem;
+}
+.grid-item.card-5 {
+  padding: 4rem 0 0 4rem;
+  line-height: 2.5rem;
+  gap: 3rem;
+  color: var(--bento-Black);
+  text-align: left;
+  overflow: hidden;
+  .fifth-grid-image {
+    width: 280px;
+  }
+}
+.grid-item.card-6 {
+  padding: 4rem 2rem 0 2rem;
+  line-height: 2.5rem;
+  gap: 5rem;
+}
+.grid-item.card-5, .grid-item.card-6 {
+  max-height: 280px;
+  overflow: hidden;
+}
+.grid-item.card-7 {
+  padding: 3rem 2rem;
+  gap: 4rem;
+}
+.grid-item.card-8 {
+  padding: 2rem 2rem;
+  color: white;
+  gap: 2rem;
+  .eighth-grid-text {
+    padding-top: 2rem;
+  }
+}
+.attribution {
+  text-align: center;
+  gap: 2rem;
+}
