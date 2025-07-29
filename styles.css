@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 
 :root {
   --bento-light-purple: hsl(254, 88%, 90%);
@@ -26,7 +26,7 @@ ol {
 
 /* UTILITIES */
 html {
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: 10px;
 }
 body {
@@ -42,7 +42,7 @@ img {
   margin: 0 auto;
 }
 .px-80 {
-  padding-left: 8rem;/* 8 * 10px == 80px*/
+  padding-left: 8rem; /* 8 * 10px == 80px*/
   padding-right: 8rem;
 }
 h1 {
@@ -62,7 +62,6 @@ p {
   font-weight: 400;
 }
 
-
 /* GRID CONTAINER STYLES */
 #grid-container {
   width: 70%;
@@ -70,13 +69,12 @@ p {
   display: grid;
   grid-template-columns: repeat(4, 250px);
   grid-template-rows: repeat(5, auto);
-  grid-template-areas: 
+  grid-template-areas:
     "One Two Two Three"
     "One Two Two Three"
     "One Five Six Three"
     "Four Five Six Three"
-    "Four Seven Eight Eight"
-  ;
+    "Four Seven Eight Eight";
   gap: 2rem;
 }
 .grid-item:nth-of-type(1) {
@@ -152,7 +150,7 @@ p {
   text-align: left;
   overflow: hidden; /* CROP IMAGE OVERFLOW */
   .third-grid-image {
-    width: 350px;     /* SPECIFIED A FIXED WIDTH TO CAUSE AN OVERFLOW */
+    width: 350px; /* SPECIFIED A FIXED WIDTH TO CAUSE AN OVERFLOW */
   }
 }
 .grid-item.card-4 {
@@ -168,7 +166,7 @@ p {
   text-align: left;
   overflow: hidden; /* CROP IMAGE OVERFLOW */
   .fifth-grid-image {
-    width: 280px;   /* SPECIFIED A FIXED WIDTH TO CAUSE AN OVERFLOW */
+    width: 280px; /* SPECIFIED A FIXED WIDTH TO CAUSE AN OVERFLOW */
   }
 }
 .grid-item.card-6 {
@@ -176,7 +174,9 @@ p {
   line-height: 2.5rem;
   gap: 5rem;
 }
-.grid-item.card-5, .grid-item.card-6 { /* SPECIFIED A FIXED WIDTH TO THE CONTAINER CAUSING AN OVERFLOW */
+.grid-item.card-5,
+.grid-item.card-6 {
+  /* SPECIFIED A FIXED WIDTH TO THE CONTAINER CAUSING AN OVERFLOW */
   max-height: 280px;
   overflow: hidden;
 }
@@ -188,7 +188,8 @@ p {
   padding: 2rem 2rem;
   color: white;
   gap: 2rem;
-  .eighth-grid-text {  /* SPECIFIED AN ADDITIONAL ON THE TEXT TO PUSHING IT DOWN */
+  .eighth-grid-text {
+    /* SPECIFIED AN ADDITIONAL ON THE TEXT TO PUSHING IT DOWN */
     padding-top: 2rem;
   }
 }
